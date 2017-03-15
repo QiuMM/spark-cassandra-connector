@@ -30,7 +30,24 @@ object ConfigCheck {
     CassandraSourceRelation.Properties ++
     ColumnTypeConf.Properties
 
+  /** Map of deprecated properties to new properties if any
+    *
+    */
+
+
   val validStaticPropertyNames = validStaticProperties.map(_.name)
+
+  /** Any properties with Capitals will not work inside SparkSQL/DataFrame Options so
+  * we will be protecting against this by throwing an error if any of the properties
+  * have capitals
+  */
+  val invalidProperties =
+    validStaticPropertyNames.filter( property => property.toLowerCase != property)
+
+  if (invalidProperties.isEmpty) throw new IllegalArgumentException(
+    s"Developer Error: These properties will not work in SparkSql/DataSets " +
+      s"because of capitals: ${invalidProperties.mkString(",")}")
+
 
 
   /**

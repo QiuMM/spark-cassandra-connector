@@ -11,7 +11,13 @@ import scala.util.Try
 import scala.util.control.NonFatal
 import org.apache.spark.SparkConf
 import com.datastax.driver.core.ProtocolOptions
+<<<<<<< Updated upstream
+import com.datastax.spark.connector.util.{Logging, ConfigCheck, ConfigParameter}
+||||||| merged common ancestors
+import com.datastax.spark.connector.util.{ConfigCheck, ConfigParameter, Logging}
+=======
 import com.datastax.spark.connector.util.{ConfigCheck, ConfigParameter, DeprecatedConfigParameter, Logging}
+>>>>>>> Stashed changes
 
 /** Stores configuration of a connection to Cassandra.
   * Provides information about cluster nodes, ports and optional credentials for authentication. */

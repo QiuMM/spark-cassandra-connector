@@ -147,17 +147,17 @@ retrieve size from C*. Can be set manually now</td>
   <td>SSL cipher suites</td>
 </tr>
 <tr>
-  <td><code>connection.ssl.keyStore.password</code></td>
+  <td><code>connection.ssl.key_store.password</code></td>
   <td>None</td>
   <td>Key store password</td>
 </tr>
 <tr>
-  <td><code>connection.ssl.keyStore.path</code></td>
+  <td><code>connection.ssl.key_store.path</code></td>
   <td>None</td>
   <td>Path for the key store being used</td>
 </tr>
 <tr>
-  <td><code>connection.ssl.keyStore.type</code></td>
+  <td><code>connection.ssl.key_store.type</code></td>
   <td>JKS</td>
   <td>Key store type</td>
 </tr>

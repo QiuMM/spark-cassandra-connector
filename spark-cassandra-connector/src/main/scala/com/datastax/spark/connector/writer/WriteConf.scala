@@ -101,7 +101,7 @@ object WriteConf {
     |""".stripMargin)
 
   val IfNotExistsParam = ConfigParameter[Boolean](
-    name = "spark.cassandra.output.ifNotExists",
+    name = "spark.cassandra.output.if_not_exists",
     section = ReferenceSection,
     default = false,
     description =

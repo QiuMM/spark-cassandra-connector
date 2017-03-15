@@ -225,7 +225,7 @@ object CassandraSourceRelation {
   )
 
   val AdditionalCassandraPushDownRulesParam = ConfigParameter[List[CassandraPredicateRules]] (
-    name = "spark.cassandra.sql.pushdown.additionalClasses",
+    name = "spark.cassandra.sql.pushdown.additional_classes",
     section = ReferenceSection,
     default = List.empty,
     description =

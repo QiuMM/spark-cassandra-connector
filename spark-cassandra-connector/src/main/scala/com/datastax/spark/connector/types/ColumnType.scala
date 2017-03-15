@@ -42,7 +42,7 @@ object ColumnTypeConf {
   val ReferenceSection = "Custom Cassandra Type Parameters (Expert Use Only)"
 
   val CustomDriverTypeParam = ConfigParameter[Option[String]](
-    name = "spark.cassandra.dev.customFromDriver",
+    name = "spark.cassandra.dev.custom_from_driver",
     section = ReferenceSection,
     default = None,
     description = """Provides an additional class implementing CustomDriverConverter for those
